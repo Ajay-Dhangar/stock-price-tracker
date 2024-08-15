@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-bg-color: #4d5061;
+    --light-bg-color: #ffffff;    
+    --light-text: #ffffff;
+    --dark-text: #4d5061;
+    --text: #000000;
+    --btn-bg-color: #48bf84;
+    --btn-hover: #3a9d5d;
+    --btn-active: #2f7a4e;
+    --btn-text: #ffffff;
+    --btn-shadow: 0 5px 0 #3a9d5d;
+    --completed-bg: #f2f2f2;
+    --completed-text: #b3b3b3;    
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg-color);
+    color: var(--light-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;    
+    background-color: var(--dark-bg-color);
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#stock-price {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color: #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#stock-price::before {
+    content: 'Stock Price: ';
+    color: var(--light-text);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: var(--btn-shadow);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--btn-hover);
+}
